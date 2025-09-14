@@ -1,0 +1,143 @@
+.contact {
+  @include content-padding-in-line;
+
+  &__form {
+    @include page-grid;
+
+    display: grid;
+    row-gap: 40px;
+    padding-bottom: 48px;
+
+    @include on-tablet {
+      row-gap: 56px;
+    }
+  }
+
+  &__forms {
+    grid-column: 1 / -1;
+
+    @include on-desktop {
+      grid-column: 1 / 7;
+    }
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus{
+    border: 2px solid #f98921;
+    -webkit-text-fill-color: #010810;
+    -webkit-box-shadow: 0 0 0 1000px #F9F9F9 inset;
+  }
+
+  &__input {
+    width: calc(100% - 22px);
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #f9f9f9;
+    height: 28px;
+    padding: 10px;
+    font-family: Manrope, sans-serif;
+    color: #7e7e83;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+
+    &:hover {
+      border: 1px solid #dbdbdb;
+    }
+
+    &:not(:placeholder-shown) {
+      font-family: Verdana, sans-serif;
+      border: 2px solid #f98921;
+      -webkit-text-fill-color: #010810;
+      -webkit-box-shadow: 0 0 0 1000px #f9f9f9 inset;
+    }
+  }
+
+  &__message {
+    width: calc(100% - 22px);
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #f9f9f9;
+    height: 138px;
+    margin-top: 10px;
+    padding: 10px;
+    resize: none;
+    padding-bottom: 32px;
+    font-family: Manrope, sans-serif;
+    font-size: 14px;
+    color: #7e7e83;
+    outline: none;
+    font-weight: 400;
+
+    &:hover {
+      border: 1px solid #dbdbdb;
+    }
+
+    &:valid {
+      font-family: Verdana, sans-serif;
+      border: 2px solid #f98921;
+      -webkit-text-fill-color: #010810;
+      -webkit-box-shadow: 0 0 0 1000px #F9F9F9 inset;
+    }
+  }
+
+  &__send {
+    width: 100%;
+    height: 56px;
+    background-color: #f98921;
+    border-radius: 8px;
+    border: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #1b2129;
+    }
+
+    &:active {
+      background-color: #010810;
+    }
+  }
+
+  &__info {
+    grid-column: 1 / -1;
+
+    @include on-desktop {
+      grid-column: 8 / -1;
+    }
+  }
+
+  &__names {
+    margin: 0;
+    color: #9393a3;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 8px;
+  }
+
+  &__information {
+    margin: 0;
+    color: #191919;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 24px;
+    transition:
+      color 0.3s ease,
+      text-shadow 0.3s ease;
+
+    &:hover {
+      color: #f98921;
+      text-shadow: 0 4px 8px #5f310666;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}
