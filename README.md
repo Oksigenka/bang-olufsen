@@ -14,6 +14,28 @@ This project is built entirely with HTML and modern CSS to demonstrate strong fr
 - HTML – semantic, accessible structure
 - CSS – modern layout techniques (Flexbox, Grid), responsive design, and visual styling
 
+## ⚡ Getting Started
+Follow these steps to set up and run the project locally.
+
+### 1. Clone the repository
+```
+git clone https://github.com/<your-username>/apple-catalog.git
+cd react-phone-catalog
+```
+### 2. Install dependencies:
+```
+npm install
+# or
+yarn install
+```
+### 3. Run the project locally:
+```
+npm start
+# or
+yarn start
+```
+---
+
 ## ✨ Features
 - Recommended Products Section – well-organized blocks with products including name, description, and price.
 - Hero / Tagline – a bold slogan (“Your senses. Set free.”) that instantly conveys the brand style.
